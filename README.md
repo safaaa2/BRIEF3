@@ -1,104 +1,125 @@
-Power BI – Déploiement d’un Tableau de Bord Interactif
+# 📊 Power BI Interactive Report  
+## 🚀 Business Performance Dashboard
 
+---
 
-Contexte du projet
-Vous travaillez en tant qu’analyste de données dans une entreprise souhaitant améliorer la prise de décision grâce à des rapports dynamiques. Jusqu’à présent, les informations étaient diffusées via des fichiers Excel statiques et manuels, ce qui limitait l’analyse et le suivi des indicateurs clés.
+## 📌 Contexte du projet
 
-La direction vous demande de construire un tableau de bord Power BI interactif, capable de :
+👩‍💼 Vous travaillez en tant qu’analyste de données dans une entreprise souhaitant améliorer la prise de décision grâce à des rapports dynamiques.
 
-Centraliser et structurer les données provenant de plusieurs sources opérationnelles.
-Permettre l’analyse par différents segments (clients, produits, fournisseurs, localisation, périodes).
-Fournir des KPI et visualisations dynamiques pour faciliter le suivi et la prise de décision.
+📉 Les rapports Excel statiques limitaient l’analyse et le suivi des indicateurs clés.
 
-👉 Votre mission : Construire un rapport Power BI professionnel et interactif, structuré, avec filtres, signets, mesures et visualisations claires pour analyser efficacement les données métiers.
+🎯 La mission consiste à construire un rapport **Power BI interactif**, structuré et orienté performance.
 
-🎯 Objectifs majeurs du projet
-Concevoir un rapport Power BI professionnel répondant à un besoin réel d’aide à la décision.
-Mettre en place une modélisation de données fiable et performante, conforme aux bonnes pratiques (schéma en étoile, table de dates, relations maîtrisées).
-Traduire des questions métier en indicateurs pertinents, à travers des mesures adaptées et des visualisations interactives.
-Exploiter les fonctionnalités avancées de Power BI pour analyser, explorer et expliquer les données (filtres, interactions, storytelling).
-Communiquer des insights clairs et exploitables permettant d’éclairer la prise de décision.
-🛠 Travail demandé :
-Phase 1 – Préparation et modélisation des données
-Importer toutes les tables dans Power BI.
-Vérifier et corriger les types de données (dates, nombres, texte).
-Créer les relations entre les tables :
-• Schéma en étoile recommandé.
+---
 
-• Clé primaire → clé étrangère entre la table principale et les autres tables.
+## 🎯 Objectifs
 
-Créer une table de dates avec toutes les colonnes nécessaires (année, mois, trimestre, jour).
-Créer des mesures adaptées aux besoins métier.
-Organiser le modèle :
-• Masquer les champs inutiles.
+- 📊 Centraliser et structurer les données
+- 🧩 Mettre en place une modélisation en schéma étoile
+- 📈 Construire des KPI dynamiques
+- 🔍 Permettre l’analyse par segment (client, produit, région, période)
+- 🎨 Produire un design professionnel UX/UI
+- 💡 Générer des insights exploitables
 
-• Créer des dossiers (Localisation, Mesures, KPI, etc.).
+---
 
-Phase 2 – Visualisations de base
-Mettre en place un environnement graphique professionnel :
+# 🛠 Phase 1 — Modélisation des données
 
-Création d’un arrière-plan cohérent
-Mise en place d’une page d’accueil
-Application d’un thème de couleurs harmonisé et lisible
-Créer des visualisations interactives répondant à des besoins métiers précis :
+- 🔗 Importation et connexion des tables
+- 🧮 Vérification des types de données
+- ⭐ Mise en place d’un **Star Schema**
+- 📅 Création d’une table de dates complète
+- 📂 Organisation du modèle (dossiers : KPI, Mesures, Localisation)
+- 🙈 Masquage des champs inutiles
 
-🔹 Histogramme – Top 5 fournisseurs ou produits
+---
 
-Afficher les 5 fournisseurs ou produits les plus performants selon un indicateur pertinent.
-Ajouter un sous-titre dynamique affichant la valeur cumulée des 5 éléments sélectionnés.
-Le sous-titre doit se mettre à jour automatiquement en fonction des filtres et de la période analysée.
-🔹 Graphique en courbe
+# 📊 Phase 2 — Visualisations
 
-Visualiser l’évolution des indicateurs clés par période (année, mois ou trimestre).
-Intégrer une ligne de tendance afin d’identifier les dynamiques et variations dans le temps.
-🔹 Graphique en secteur
+## 🏆 Top 5 Fournisseurs / Produits
 
-Représenter la répartition de l’activité par catégorie (produits, familles, segments ou équivalent).
-Mettre en évidence les contributions relatives de chaque catégorie.
-🔹 Carte KPI
+- 📌 Histogramme dynamique
+- 🔄 Sous-titre cumulatif automatique
+- 🎛 Réagit aux filtres et périodes
 
-Afficher des indicateurs globaux pertinents (totaux, volumes, délais ou autres métriques clés).
-Les KPI doivent être dynamiques et réagir aux filtres appliqués dans le rapport.
-💡 Remarque importante : Chaque visualisation doit répondre à une question métier clairement identifiée, être cohérente avec l’indicateur choisi et permettre une interaction fluide avec le reste du rapport (filtres, sélections, navigation).
+## 📈 Évolution temporelle
 
-Phase 3 – Tables et interactions
-Créer des matrices et tables croisée pour visualiser différents indicateurs par client, produit ou fournisseur.
-Appliquer la mise en forme conditionnelle :
-• Couleur ou fond de cellule selon valeur
+- 📅 Analyse par mois / trimestre / année
+- 📉 Ligne de tendance intégrée
 
-• Icônes pour représenter des seuils (↑, ↓, ⚠)
+## 🥧 Répartition par catégorie
 
-Mettre en place filtres et interactions avancées.
-Créer et utiliser signets pour navigation et storytelling.
-Exploiter les info-bulles (tooltips) pour afficher des détails supplémentaires.
-Phase 4 – Analyse des données
-Analyse sans DAX
+- 📊 Graphique en secteur
+- ⚖ Visualisation des contributions relatives
 
-Agrégations standards (somme, moyenne, max, min)
-Mesures rapides intégrées
-Calculs visuels directement dans les graphiques
-Analyse avec DAX
+## 🎯 KPI Cards
 
-Créer des mesures avancées pour répondre à des questions métier :
-• Top 5 fournisseurs ou produits
-• Comparaison de performances par segment ou période
+- 💰 Totaux
+- 📦 Volumes
+- ⏱ Délais
+- 🔄 Indicateurs dynamiques
 
-• Détection des tendances et anomalies
+---
 
-• Analyse de l’impact des volumes ou délais sur la performance
+# 🧠 Phase 3 — Analyse Avancée
 
-Questions métier à traiter
+## 🔢 Analyse sans DAX
+- ➕ Somme / Moyenne / Max / Min
+- ⚡ Mesures rapides
 
-Quels sont les 5 fournisseurs ou produits les plus performants ?
-Quelle catégorie de produit génère le plus d’activité ?
-Quelle région ou ville contribue le plus aux indicateurs clés ?
-Quels délais ou écarts impactent la performance globale ?
-Quels segments ou clients nécessitent une attention particulière pour améliorer la performance ?
-Phase 5 – Finalisation et publication
-Vérifier la lisibilité et cohérence du rapport
-Optimiser l’expérience utilisateur : navigation fluide, filtres clairs, couleurs harmonieuses
-Publier le rapport dans Power BI Service
-Documenter le fichier .pbix : noms clairs, dossiers organisés, mesures commentées
-Rédiger un mini rapport narratif : 3 insights clés issus de l’analyse
-Modalités pédagogiques
-Travail : individuel
+## 📘 Analyse avec DAX
+- 🏆 Top 5 dynamique
+- 📊 Comparaison par segment
+- 📈 Analyse des tendances
+- 🚨 Détection anomalies
+
+---
+
+# 🔍 Questions métier traitées
+
+- 🏅 Quels sont les 5 produits les plus performants ?
+- 🏷 Quelle catégorie génère le plus d’activité ?
+- 🌍 Quelle région contribue le plus ?
+- ⏳ Quels délais impactent la performance ?
+- 👥 Quels clients nécessitent une attention particulière ?
+
+---
+
+# 🎨 Expérience Utilisateur
+
+- 🎛 Filtres dynamiques
+- 🔁 Navigation via signets (Bookmarks)
+- 💬 Tooltips enrichis
+- 🎨 Thème cohérent et harmonisé
+- 📐 Mise en page équilibrée
+
+---
+
+# 🚀 Publication
+
+- ☁ Publication sur Power BI Service
+- 📁 Documentation claire du fichier `.pbix`
+- 📝 Rédaction d’insights clés
+
+---
+
+## 🧰 Outils
+
+- 🖥 Power BI Desktop
+- ☁ Power BI Service
+
+---
+
+## 💼 Compétences développées
+
+- 📊 Business Intelligence
+- ⭐ Data Modeling (Star Schema)
+- 📅 Time Intelligence
+- 🧮 DAX avancé
+- 🎨 Dashboard Design
+- 🧠 Analyse décisionnelle
+
+---
+
+✨ Projet réalisé dans un contexte simulant une mission BI réelle orientée performance.
